@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,500;1,600;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #def9ee;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.header {
+    background-image:url(imagenes/bg.jpg) ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+    padding: 80px 0;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-content: space-between;
+}
+
+.logo {
+    color: #130501;
+    font-size: 25px;
+    font-weight: 800;
+    text-transform: uppercase;
+    
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 28px;
+    color: #000000;
+    font-weight: 600;
+    display: block;
+
+}
+
+.menu .navbar ul li a :hover {
+    color: #000105;
+
+}
+
+#menu {
+    display: none;
+
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    display: flex;
+}
+.header-txt {
+    flex-basis: 50%;
+}
+.header-txt h1 {
+    font-size: 60px;
+    color: #FFFFFF;
+    line-height: 1.3;
+    margin-bottom: 25px;
+}
+.header-txt span {
+    color: #ff5a2c;
+}
+
+.header-txt p {
+    font-size: 17px;
+    color: #000000e0;
+    margin-bottom: 45px;
+}
+
+.butons {
+    display: flex;
+}
+
+.btn-1, .btn-2, .btn-3 {
+    display: inline-block;
+    padding: 11px 35px;
+    border: 2px solid #ff5a2c;
+    border-radius: 25px;
+    margin-right: 25px;
+    font-size: 17px;
+    color: #FFFFFF;
+}
+
+.btn-1:hover {
+    background-color: #ff5a2c;
+
+}
+
+.popular {
+    padding: 100px 0;
+    text-align: center;
+}
+
+h2 {
+    color: #000000;
+    font-size: 35px;
+    margin-bottom: 45px;
+}
+
+.popular-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular-content img {
+    width: 150px;
+}
+
+.product-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.product-1 {
+    background-color: #2a223a;
+}
+
+.product-txt {
+    padding: 50px 30px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price p {
+    font-size: 17px;
+    color: #ff5a2c;
+}
+
+.btn-2 {
+    padding: 5px 25px;
+    background-color: #ff5a2c;
+    margin-right: 0;
+}
+
+.contact {
+    padding: 150px 300px;
+}
+
+.contact-content{
+    background-color: #2a223a;
+    text-align: center;
+    padding: 50px;
+    border-radius: 50px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+input {
+    padding: 18px 25px;
+    background-color: #3f3456;
+    border: 0;
+    border-radius: 25px;
+    outline: none;
+    margin-right: 100px;
+    color: #FFFFFF;
+    font-size: 17px;
+}
+
+::placeholder {
+    color: #e0e0e0;
+    font-size: 17px;
+}
+
+.btn-3 {
+    background-color: #ff5a2c;
+    cursor: pointer;
+    margin-right: 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.link ul li > a {
+    font-size: 17px;
+    color: #FFFFFF;
+    margin-right: 20px;
+} 
+
+.link ul li > a:hover {
+    color: #ff5a2c;
+}
+
+@media(max-width:991px) {
+
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #ff5a2c;
+        display: none;
+    }
+
+    .menu .navbar ul li a:hover {
+        color: #1B1726;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+    .header {
+        min-height: 0vh;
+        padding: 80px 30px 50px 30px;
+    }
+
+    .header-txt {
+        text-align: center;
+        flex-basis: 100%;
+    }
+
+    .header-txt h1 {
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
+
+    .butons {
+        justify-content: center;
+    }
+
+    .btn-1:last-of-type[
+        margin-right: 0;
+    ]
+
+    .popular {
+        display: none;
+    }
+
+    .product {
+        padding: 30px;
+    }
+
+    .product-content {
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
+    }
+
+    .product-1 img {
+        width: 100%;
+    }
+
+    .contact {
+        padding: 30px;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    input {
+        margin: 0 0 20px 0;
+    }
+    
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .link ul {
+        margin-top: 20px;
+    }
+}
+/* Estilos adicionales para la sección de escaneo de QR */
+.escaneo-qr {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    text-align: center;
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.escaneo-content img {
+    width: 50px; /* Ancho de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+    border: none; /* Elimina el borde predeterminado del enlace */
+    display: block;
+    margin: 0 auto; /* Centrar horizontalmente la imagen */
+    cursor: pointer; /* Hacer que el cursor cambie a una mano al pasar sobre la imagen */
+}
+/* En tu CSS */
+.spotify-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1DB954; /* Verde característico de Spotify */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .spotify-button img {
+    width: 20px; /* Ajusta el tamaño de la imagen según sea necesario */
+    margin-right: 10px;
+  }
+  
+  .spotify-button:hover {
+    background-color: #16813D; /* Cambia el color al pasar el ratón sobre el botón */
+  }
+/* Estilos para el enlace */
+a {
+    text-decoration: none; /* Elimina el subrayado predeterminado del enlace */
+    color: #000000; /* Color del texto del enlace */
+    font-weight: bold; /* Hace que el texto sea más audaz */
+    transition: color 0.3s ease; /* Agrega una transición suave al color del texto */
+  }
+  
+  /* Cambia el color del enlace al pasar el mouse sobre él */
+  a:hover {
+    color: #ff9900;
+  }
+  /* Estilos para la sección de contacto */
+#contacto {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  #contacto h2 {
+    color: #333;
+  }
+  
+  .info-contacto {
+    margin-top: 10px;
+  }
+  
+  .info-contacto p {
+    margin: 5px 0;
+  }
+  
+  .info-contacto a {
+    color: #3366cc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .info-contacto a:hover {
+    color: #ff9900;
+  }
+  
+    /* styles.css */
+
+/* Agrega estilos específicos para el formulario de pago */
+#formulario-pago {
+    display: none;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#formulario-pago label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+#formulario-pago input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+#formulario-pago button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#formulario-pago button:hover {
+    background-color: #45a049;
+}
+.payment-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.payment-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.payment-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.payment-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.payment-form button:hover {
+    background-color: #45a049;
+}
+.btn-2 {
+    cursor: pointer;
+}
+.qr-section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.qr-code {
+    max-width: 200px;
+    margin: 10px;
+}
+.artivive-download a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.artivive-download a:hover {
+    color: #ff9900;
+}
+
+.artivive-download img {
+    width: 20px;
+    margin-right: 10px;
+}
+/* Agrega estos estilos a tu CSS existente o en un archivo separado */
+
+.portadas-libros {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.portadas-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.libro {
+    text-align: center;
+}
+
+.libro img {
+    max-width: 200px;
+    border: 1px solid #ddd; /* Borde delgado alrededor de la imagen */
+    border-radius: 5px; /* Esquinas redondeadas */
+    transition: transform 0.3s ease; /* Efecto de transición al pasar el ratón */
+    cursor: pointer;
+}
+
+.libro img:hover {
+    transform: scale(1.1); /* Aumentar el tamaño al pasar el ratón */
+}
+
+.libro p {
+    margin-top: 10px;
+    font-weight: bold;
+}
